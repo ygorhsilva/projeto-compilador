@@ -1,0 +1,23 @@
+/* prot�tipos */
+void init();
+void nextchar();
+void error(char *s);
+void fatal(char *s);
+void expected(char *s);
+void dumptable();
+int isaddop(char c);
+int ismulop(char c);
+int isorop(char c);
+int isrelop(char c);
+void skipwhite();
+void newline();
+void match(char c);
+char getname();
+char getnum();
+char add(char type);
+char subtract(char type);
+char asm_pop (char t1, char t2);
+char asm_popsub(char t1, char t2);
+char asm_sametype(char t1, char t2, int ord_matters);
+char term();char asm_popmul(char t1, char t2);
+char asm_popdiv(char t1, char t2);
